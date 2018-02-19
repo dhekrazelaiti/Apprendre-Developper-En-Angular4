@@ -30,6 +30,15 @@
 ### Création d'un nouveau Projet Angular
 - Pour générer la structure d'un projet Angular, on utilise Angular CLI via sa commande ng suivie des options **new** et **nomProjet**
    - `ng new FirstApp`
+- Cette commande génère les différen sfichiers requis par une application basique Angular et installe aussi toutes les dépendences requise par ce projet.
+### Exécution du projet 
+- Pour executer votre projet Angular, nous exécutons la commande : `ng serve`
+- cette commande compile de code source du projet pour transpiler le code TypeScript en JavaScript et en méme temps démarre un serveur Web local basé sur Node Js pour déployer l'application localement.
+- Pour tester le projet généré, il suffit de lancer le navigateur et tapeer : `http://localhost:4200`
+- Dans l'étape suivate, nous allons regarder la structure du projet généré par Angular CLI.
+### Structure du projet Angular
+
+![An awesome example image](https://image.ibb.co/mJiDt7/01.png "Structure")
 
 
 
