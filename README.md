@@ -20,7 +20,8 @@
  > Architecture basé sur les composents web (Web Component).
  - **Angular 4:** 
  > Une mise à jours d'Angular 2.
- ##Architercture
+
+##Architercture :
  - Angular a une architecture de composanti nspirée des composant web
  - Une application Angular se compose de :
    - Un ou plusieur modules dont un est principal
