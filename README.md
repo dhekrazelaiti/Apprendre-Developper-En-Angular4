@@ -20,6 +20,17 @@
  > Architecture basé sur les composents web (Web Component).
  - **Angular 4:** 
  > Une mise à jours d'Angular 2.
+ ##Architercture
+ - Angular a une architecture de composanti nspirée des composant web
+ - Une application Angular se compose de :
+   - Un ou plusieur modules dont un est principal
+   - Chaque module peut inclure:
+     - **Des composant web :** la partie visible de l'application Web
+     - **Des services:**  Les Composant peuvent utiliser des services via le principe de l'injection des dépendences.
+     - **Les directives :** un composant peut utiliser des directives 
+     - **Les pipes:** utilisés pour formater l'affichage des données dans les composants.
+![An awesome example image](https://image.ibb.co/mUTmwS/06.png "StructureComposant")
+     
  ## Création d'une Application Angular 
  ### Outils d'installation
  Pour débuter le développement d'une application angular, il faut installé les outils suivants: 
@@ -38,8 +49,17 @@
 - Pour tester le projet généré, il suffit de lancer le navigateur et tapeer : `http://localhost:4200`
 - Dans l'étape suivate, nous allons regarder la structure du projet généré par Angular CLI.
 ### Structure du projet Angular
-
 ![An awesome example image](https://image.ibb.co/mJiDt7/01.png "Structure")
+- Comme nous pouvons le constater d'après la structurel le code est constituer d'une page `index.html` qui va faire appel au composant racine de l'application qui est `<app-root> `.
+- Le `main.ts`c'est le premier fichier qui va etre démarer et qui contient le module principale.
+- Et nous avons le composant qui se compose de quatre fichiers: 
+   - Nous avons la partie `html`c'est la `Vue`.
+   - La partie TypeScript qui représente une classe `AppComponent`avec un décorateur `@Component`dont le quel nous spécifions :
+      - Le Seletceur : élément utiliser pour afficher le composant dans la partie html.
+      - templateUrl : pour afficher la vue associée au composant
+      - styleUrls : pour définir le style du composant
+![An awesome example image](https://preview.ibb.co/en1QO7/05.png "StructureComposant")
+      
 
 
 
