@@ -24,9 +24,9 @@
  ### Outils d'installation
  Pour débuter le développement d'une application angular, il faut installé les outils suivants: 
 
-    - [NodeJS](https://nodejs.org/en/download/) : - Node Js installe l'outil npm qui permet de télécharger et installer des bibliothèque JavaScript.
-    - [Installer Angular CLI](https://cli.angular.io/): - permet de générer, compiler, tester et déployer les projets angular 
-    - 'npm' install -g @angular/cli
+- [NodeJS](https://nodejs.org/en/download/) : - Node Js installe l'outil npm qui permet de télécharger et installer des bibliothèque JavaScript.
+- [Installer Angular CLI](https://cli.angular.io/): - permet de générer, compiler, tester et déployer les projets angular 
+- npm install -g @angular/cli
 
 
 
