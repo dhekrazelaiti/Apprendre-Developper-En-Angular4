@@ -27,6 +27,7 @@
 - [NodeJS](https://nodejs.org/en/download/) : - Node Js installe l'outil npm qui permet de télécharger et installer des bibliothèque JavaScript.
 - [Installer Angular CLI](https://cli.angular.io/): - permet de générer, compiler, tester et déployer les projets angular 
 - `npm install -g @angular/cli`
+- Pour vérifier si angular CLI est bien installer, taper:  `ng -v`.
 ### Création d'un nouveau Projet Angular
 - Pour générer la structure d'un projet Angular, on utilise Angular CLI via sa commande ng suivie des options **new** et **nomProjet**
    - `ng new FirstApp`
