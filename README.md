@@ -29,7 +29,7 @@
 - npm install -g @angular/cli
 ### Création d'un nouveau Projet Angular
 - Pour générer la structure d'un projet Angular, on utilise Angular CLI via sa commande ng suivie des options **new** et **nomProjet**
-   - 'ng' new FirstApp
+   - `ng` new FirstApp
 
 
 
