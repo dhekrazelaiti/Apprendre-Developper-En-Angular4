@@ -36,8 +36,23 @@
 ## Les Composants 
 ### Les Modules 
 - Les applications Angular sont modulaires.
-- Angular possède son propre système de modularité appelé `modules angular`ou NgModules 
-{: .ngmodules-orange} 
+- Angular possède son propre système de modularité appelé `modules angular`ou `NgModules`.
+- Chaque application Angular possède au moins une classe de module angular: le module racine, appelé classiquement `AppModule`.
+- Un module angular est une classe avec un décorateur `@NgModule`.
+- Les décorateurs sont des fonctions qui modifient les classes JavaScript.
+- Angular possède de nombreux décorateurs qui attachent des métadonnées aux classes pour configurer et donner le sens à ces classes.
+![An awesome example image](https://image.ibb.co/jogeJH/07.png "Structure")
+- `NgModule` est un décorateur qui prend en parametre un objet JavaScript qui contient des métadonnés don't les propriétés décrivent le module. Les proporiétés les plus importantes sont :
+    - **declarations:** la classe représentant le module. Angular a trois types de classes de modules: `components, directives and pipes`.
+    - **imports:** c'est importer d'autre modules.
+    - **providers:** pour la déclaration des servives
+    - **exports:** pour exporter les classes utilisables dans d'autres modules.
+    - **bootstrap:** pour déclarer le composant racine  du module. Seul le module racine doit définir cette propriété.
+- Le module racine est démarré dans le fichier `main.ts`.
+- Par défaut le module racine s'appelle `AppModule`
+
+### Les Composants
+{: .composants-orange}
 
 
      
