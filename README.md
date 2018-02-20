@@ -22,6 +22,7 @@
  > Une mise à jours d'Angular 2.
 
 ## Architercture :
+
  - Angular a une architecture de composanti nspirée des composant web
  - Une application Angular se compose de :
    - Un ou plusieur modules dont un est principal
@@ -31,6 +32,13 @@
      - **Les directives :** un composant peut utiliser des directives 
      - **Les pipes:** utilisés pour formater l'affichage des données dans les composants.
 ![An awesome example image](https://image.ibb.co/mUTmwS/06.png "StructureComposant")
+
+## Les Composants 
+### Les Modules 
+- Les applications Angular sont modulaires.
+- Angular possède son propre système de modularité appelé `modules angular`ou NgModules {: .gitlab-orange} 
+
+
      
  ## Création d'une Application Angular 
  ### Outils d'installation
