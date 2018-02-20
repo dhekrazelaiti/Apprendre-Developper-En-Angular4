@@ -36,7 +36,8 @@
 ## Les Composants 
 ### Les Modules 
 - Les applications Angular sont modulaires.
-- Angular possède son propre système de modularité appelé `modules angular`ou NgModules {: .gitlab-orange} 
+- Angular possède son propre système de modularité appelé `modules angular`ou NgModules 
+{: .NgModules-orange} 
 
 
      
