@@ -37,7 +37,7 @@
 ### Les Modules 
 - Les applications Angular sont modulaires.
 - Angular possède son propre système de modularité appelé `modules angular`ou NgModules 
-{: .NgModules-orange} 
+{: .ngmodules-orange} 
 
 
      
