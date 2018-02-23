@@ -83,6 +83,54 @@
 #### Exemple de Data Binding
 ![An awesome example image](https://image.ibb.co/b1qvcc/12.png "Data Binding Exemple")
 
+### Les Services et Injection des dépendences
+
+#### Injection des dépendences
+- L'injection de dépendence est une façon de fournir une nouvel instance d'une classe avec la dépendences entièrement formées dont elle a besoin.
+- La plutpart des dépendences sont des services.
+##### Décorateur Injectable
+- `@Injectable()` est un décorateur un peu particulier. Il ne permet pas l’injection à proprement parlé, mais plutôt d’initialiser un contexte détectabilité. Si vous injectez dans un de vos services ( sans ce décorateur) un autre service, le moteur d'injection retournera une erreur. Angular conseille de toujours mettre cette annotation sur un service même si vous n'utilisez pas les injections dans les premiers développements de votre service afin d'éviter de se poser la question plus tard.
+
+   > Pour informaion, les decorateurs `@Component`, `@Pipe`, et `@Directive` sont des sous classes de `@Injectable()`.
+   > Ces décorateurs ajoutent des MetaDatas au code JavaScript transpilé à partir de nos fichiers TypeScript.
+   > Par défaut, le compilateur TypeScript rejette toutes les meta-données. Pour que ces metadatas soient integrées au JavaScript, l'option `emitDecoratorMetadata` doit être à true dans votre fichier `tsconfig.json` de votre projet.  
+   > Angular-CLI a dèjà configuré  votre `tsconfig.json` pour les prendre en charge
+#### Services  
+- Les services ne sont qu'une classe pour encapsuler une certaine logique que nous souhaitons partager à travers des endroits dans l'applications.
+- Généralement, les composants se limite à l'affichage et à la gestion des événements utilisateurs dans la vue du composant. L'éxecution des traitements en local ou en back-end sont attribués aux services.
+- Quand un événement survient dans la vue, le composant fait appel à des fonctions dans les services pour effectuer des traitements et fournir des résultats.
+- **Généralement, c'est `les service`qui integragissent avec la partie back-end de l'application en envoyant des requetes HTTP.**
+- Les composants consomment les services, toutefois, un service peut consommer d'autres services.
+- Avec l'injection de dépendence d4angular, nous pouvons injecter des services autour de notre application.
+> **Pourquoi Utiliser des Services.**
+> - Ajoute une logique métier à notre application.
+> - Service de données: classe qui gère l'obtention et la configuration des données.
+
+####Enregistrement des services 
+- Pour utiliser un service, il faut préalablement enregistrer un fournisseur de ce service avec l'injecteur.
+- Un fournisseur de service est une fabrique qui permet de gérer l'instanciation des services.
+- Pour inclure le service en tant que fournisseur, nous devons d'abord importer le service via l'importation `{AboutService}`.(dans notre exemple)
+- Ensuite, nous devons enregistrer `AboutService` en tant que fournisseur dans le décorateur `@NgModule`. En enregistrant le service en tant que fournisseur, nous le rendons disponible partout dans l'application.
+![An awesome example image](https://image.ibb.co/hdSY0x/13.png "Sevice")
+
+### Routage et Navigation
+- Angular a un ensemble de modules nommé `Router` pour gérer le routage côté client.
+- Le routeur angular permet la navigation d'une vue à l'autre lorsque les utilisateurs exécutent des taches d'application.
+- Le routeur angular est un service facultatif qui présente une vue de composant particulière pour une URL donnée.
+- Il ne fait pas partie du noyeau angular.
+- C'est dans son propore paquet de bibliothèque `@angular/router`.
+- Importez ce dont vous avez besoin comme vous le feriez à partir de tout paquet Angular.
+**src/app/app.module.ts(import)**
+`import { RouterModule, Routes} from '@angular/router' `.
+
+![An awesome example image](https://image.ibb.co/dNmo0x/14.png "Router")
+
+
+
+
+
+
+
      
  ## Création d'une Application Angular 
  ### Outils d'installation
